@@ -7,8 +7,28 @@
     <title>Document</title>
     <style>
         header {
-            background-color: rgb(242, 220, 250);
-            
+            background-image: radial-gradient(#f8edf9, #e985f6, #f8edf9);
+
+        }
+
+        .container {
+
+            display: flex;
+            /* align-content: space-around; */
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .box {
+            /* background-color:rgb(248, 234, 246); */
+        }
+
+        .box1 {
+            /* background-color: rgb(248, 234, 246); */
+            text-align: right;
+            align-content: space-between;
+            justify-content: flex-end;
+            padding-right: 10px;
         }
 
         .head1 {
@@ -16,8 +36,11 @@
         }
 
         main {
-            background-color: rgb(165, 34, 201);
-          
+            background-image: url("./ce0ded_8269dae0850d4c08b89f71b65c2de5a3~mv2.webp");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
         }
 
         .list {
@@ -27,32 +50,49 @@
         }
 
 
-        .forms {
+        #sec1 {
             width: fit-content;
             margin: 0px auto;
-            padding: 70px;
+            padding: 15px;
+            background-color: rgba(248, 234, 246, 0.383);
         }
 
         footer {
-            background-color: rgb(245, 234, 248);
-         
+            background-color: rgb(248, 234, 246);
+
         }
 
-        .footer1 {
+        #sec2 {
             padding: 30px;
         }
+
         .par_kliniku {
             text-align: center;
+
+        }
+        .par_kliniku p {
+            font-size: 25px;
+        }
+        .par_kliniku h2 {
+            font-size: 30px;
         }
     </style>
 </head>
 
 <body>
     <Header>
-        <section class="head1"> <img src="./periodentplusINSTlogo_v2_dark.webp" alt="Periodent">
-            <h1>PERIODENT zobārstniecības klinika</h1>
-        </section>
+        <div class="container">
 
+            <div class="box"><img src="./periodentplusINSTlogo_v2_dark.webp" alt="Periodent"></div>
+            <div class="box">
+                <h1>PERIODENT PLUS zobārstniecības klinika</h1>
+            </div>
+            <div class="box1"> <a href="#sec1"><b>Pieteikt apmeklējumu</b></a><br>
+                <br>
+                <a href="#sec2"><b>Kontakti</b></a>
+            </div>
+
+        </div>
     </Header>
 
     <main>
@@ -84,8 +124,8 @@
                 <li>Bērnu zobārstniecība</li>
             </ul>
         </section>
-        <section class="forms">
-            <fieldset>Pieteikt apmeklējumu:
+        <section id="sec1">
+            <fieldset><b><u>Pieteikt apmeklējumu:</b></u>
                 <!-- <legend>Pieteikt apmeklējumu</legend> -->
                 <br>
                 <label for="username">Jūsu vārds:</label>
@@ -106,7 +146,7 @@
 
     </main>
     <footer>
-        <section class="footer1">
+        <section id="sec2">
             <h3><u>Kontakti:</u></h3>
             <p><u>Adrese:</u> Alauksta iela 16-1A, Latgales priekšpilsēta, Rīga, LV-1009, Latvija
                 ​</p>
